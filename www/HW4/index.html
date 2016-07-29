@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="CSS/bootstrap.css" type="text/css" rel="stylesheet">
+    <script src="JS/jquery.min.js"></script>
+    <script type="text/javascript" src="JS/main.js"></script>
+    <script type="text/javascript" src="JS/bootstrap.js"></script>
+
+
+    <title>html5_game</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 ">
+            <button class="btn btn btn-primary btn-lg" onclick="start()">play</button>
+        </div>
+        <div class="col-md-6 ">
+
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                RULES
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>welcome to dubo's airplane game</p>
+                            <p>you can control your airplane with your keyboard up down right left</p>
+                            <p>when you need pause you need keep press space bar
+</p>
+                            <p>you will hava 5lives </p>
+                            <p>if you dont hava live or the distances=0 the game with end</p>
+                            <p>hava fun</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-2 ">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Small modal</button>
+
+            <!-- Modal -->
+            <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content" >
+                       <ul id="123">
+
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="" style="margin-top: 1%">
+
+        <div class="col-md-4 ">
+
+
+            <div class="col-md-6">
+                <div >
+                    <img src="img/air1.png" style="height: 100px;width: 100px" onclick="chose(this)">
+                </div>
+            </div>
+            <div class="col-md-6" >
+                <div >
+                    <img src="img/air2.png" style="height: 100px;width: 100px" onclick="chose(this)">
+                </div>
+            </div>
+            <div class="col-md-6" style="margin-top: 1%">
+                <div >
+                    <img src="img/air3.png" style="height: 100px;width: 100px" onclick="chose(this)">
+                </div>
+            </div>
+            <div class="col-md-6" style="margin-top: 1%">
+                <div >
+                    <img src="img/air4.png" style="height: 100px;width: 100px" onclick="chose(this)">
+                </div>
+            </div>
+            <div class="col-md-6" style="margin-top: 1%">
+                <div >
+                    <img src="img/air5.png" style="height: 100px;width: 100px" onclick="chose(this)">
+                </div>
+            </div>
+            <div class="col-md-6" style="margin-top: 1%">
+                <div >
+                    <img src="img/air6.png" style="height: 100px;width: 100px" onclick="chose(this)">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4" style="">
+            <canvas id='flight' width='400' height='500' style="background:url(img/bg.jpg);position: absolute" onclick="main()">
+            </canvas>
+
+            <!--<div id="flight"style="width: 400px;height:500px;background-color: yellow;position: absolute">-->
+                <!--<img id="G" src="img/air1.png">-->
+            <!--</div>-->
+
+        </div>
+        <div class="col-md-4 ">
+            <div id="dropBox" style="width: 200px;height: 200px;border: dashed 2px black">Drop files here</div>
+
+
+
+            <!--<div id="dropbox" style="position: relative;float: left;margin-top: 10%;margin-left: 10%;width: 200px;height: 200px;border: dashed 2px black;">-->
+
+            <!--</div>-->
+        </div>
+
+</div>
+
+
+
+
+
+<audio id="bgaudio" src="./audio/bgaudio.mp3" loop="loop"></audio>
+</body>
+</html>
